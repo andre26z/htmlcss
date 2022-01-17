@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+</head>
+<body>
+    <input type="number" name="meunum" id="meunum"> Digite um Número!
+<form>
+    <input type="number" name="code" id="code" type="text" value="" >
+    <input type="button" style="font-size:9pt" value="Clique para sortear um número" onclick="document.getElementById('code').value = makeid()"> </form>
+   
+   
+<script>
+    function makeid() {
+    var rdn = Math.floor(Math.random() * 10)
+    return rdn;
+    }
+      
+var meunum = document.getElementById('meunum').value;
+ 
+     
+if (meunum === rdn) {
+document.write('acertou')}
+
+ else if (meunum != rdn) {
+    document.write('errou')
+}
+ 
+</script>
+
+</form>
+</body>
+</html>
